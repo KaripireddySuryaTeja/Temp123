@@ -1,0 +1,50 @@
+{
+  "name": "EventRegistration",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Event ID"
+    },
+    "student_id": {
+      "type": "string",
+      "description": "Student ID"
+    },
+    "student_name": {
+      "type": "string",
+      "description": "Student name"
+    },
+    "student_email": {
+      "type": "string",
+      "description": "Student email"
+    },
+    "remind_me": {
+      "type": "boolean",
+      "default": false,
+      "description": "Reminder enabled"
+    },
+    "checked_in": {
+      "type": "boolean",
+      "default": false,
+      "description": "Attendance checked in"
+    },
+    "check_in_time": {
+      "type": "string",
+      "description": "Check-in timestamp"
+    },
+    "certificate_sent": {
+      "type": "boolean",
+      "default": false,
+      "description": "Certificate sent status"
+    },
+    "qr_code": {
+      "type": "string",
+      "description": "QR code data for check-in"
+    }
+  },
+  "required": [
+    "event_id",
+    "student_id",
+    "student_name"
+  ]
+}

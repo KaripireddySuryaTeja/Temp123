@@ -1,0 +1,55 @@
+{
+  "name": "AcademicRecord",
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string",
+      "description": "Student ID"
+    },
+    "semester": {
+      "type": "string",
+      "description": "Semester (e.g., Semester 1, Semester 2)"
+    },
+    "subject_code": {
+      "type": "string",
+      "description": "Subject code"
+    },
+    "subject_name": {
+      "type": "string",
+      "description": "Subject name"
+    },
+    "credits": {
+      "type": "number",
+      "description": "Subject credits"
+    },
+    "grade": {
+      "type": "string",
+      "enum": [
+        "A+",
+        "A",
+        "B+",
+        "B",
+        "C+",
+        "C",
+        "D",
+        "F"
+      ],
+      "description": "Grade obtained"
+    },
+    "marks": {
+      "type": "number",
+      "description": "Marks obtained"
+    },
+    "max_marks": {
+      "type": "number",
+      "description": "Maximum marks"
+    }
+  },
+  "required": [
+    "student_id",
+    "semester",
+    "subject_code",
+    "subject_name",
+    "grade"
+  ]
+}

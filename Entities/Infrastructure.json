@@ -1,0 +1,61 @@
+{
+  "name": "Infrastructure",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Facility name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Academic",
+        "Sports",
+        "Accommodation",
+        "Medical",
+        "Recreation",
+        "Transport",
+        "Cafeteria",
+        "Other"
+      ],
+      "description": "Category of facility"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description"
+    },
+    "location": {
+      "type": "string",
+      "description": "Location within campus"
+    },
+    "timings": {
+      "type": "string",
+      "description": "Operating hours"
+    },
+    "capacity": {
+      "type": "string",
+      "description": "Capacity or size"
+    },
+    "contact_person": {
+      "type": "string",
+      "description": "In-charge contact person"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Contact phone number"
+    },
+    "facilities_available": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of available facilities"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "description",
+    "location"
+  ]
+}

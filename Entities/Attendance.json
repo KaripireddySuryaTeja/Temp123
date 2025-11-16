@@ -1,0 +1,47 @@
+{
+  "name": "Attendance",
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string",
+      "description": "Student ID"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Subject name"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of class"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Present",
+        "Absent",
+        "Late"
+      ],
+      "description": "Attendance status"
+    },
+    "faculty_name": {
+      "type": "string",
+      "description": "Faculty who marked attendance"
+    },
+    "time_slot": {
+      "type": "string",
+      "description": "Time period of the class"
+    },
+    "remarks": {
+      "type": "string",
+      "description": "Additional remarks if any"
+    }
+  },
+  "required": [
+    "student_id",
+    "subject",
+    "date",
+    "status",
+    "faculty_name"
+  ]
+}

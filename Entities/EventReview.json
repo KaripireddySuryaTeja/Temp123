@@ -1,0 +1,33 @@
+{
+  "name": "EventReview",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Event ID"
+    },
+    "student_id": {
+      "type": "string",
+      "description": "Student ID"
+    },
+    "student_name": {
+      "type": "string",
+      "description": "Student name"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Rating from 1 to 5 stars"
+    },
+    "review": {
+      "type": "string",
+      "description": "Review text"
+    }
+  },
+  "required": [
+    "event_id",
+    "student_id",
+    "rating"
+  ]
+}

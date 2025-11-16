@@ -1,0 +1,57 @@
+{
+  "name": "Schedule",
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string",
+      "description": "Student ID this schedule belongs to"
+    },
+    "day_of_week": {
+      "type": "string",
+      "enum": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "description": "Day of the week"
+    },
+    "time_slot": {
+      "type": "string",
+      "description": "Time period (e.g., 9:00 AM - 10:00 AM)"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Subject name"
+    },
+    "faculty_name": {
+      "type": "string",
+      "description": "Faculty member teaching"
+    },
+    "room_number": {
+      "type": "string",
+      "description": "Classroom number"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Lecture",
+        "Lab",
+        "Tutorial",
+        "Break"
+      ],
+      "description": "Type of class"
+    }
+  },
+  "required": [
+    "student_id",
+    "day_of_week",
+    "time_slot",
+    "subject",
+    "faculty_name",
+    "room_number",
+    "type"
+  ]
+}

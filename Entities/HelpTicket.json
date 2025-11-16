@@ -1,0 +1,73 @@
+{
+  "name": "HelpTicket",
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string",
+      "description": "Student ID who raised the ticket"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Academic",
+        "Administrative",
+        "Technical",
+        "Hostel",
+        "Transport",
+        "Library",
+        "Fees",
+        "Other"
+      ],
+      "description": "Issue category"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Brief subject of the issue"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the issue"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ],
+      "default": "Medium",
+      "description": "Priority level"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "In Progress",
+        "Resolved",
+        "Closed"
+      ],
+      "default": "Open",
+      "description": "Ticket status"
+    },
+    "response": {
+      "type": "string",
+      "description": "Response from administration"
+    },
+    "resolved_by": {
+      "type": "string",
+      "description": "Person who resolved the issue"
+    },
+    "resolved_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when issue was resolved"
+    }
+  },
+  "required": [
+    "student_id",
+    "category",
+    "subject",
+    "description"
+  ]
+}
